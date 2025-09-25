@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-dark text-white">
-<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm sticky-top">
+
+  <!-- NAVBAR Opening -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm sticky-top">
     <div class="container-fluid">
       <!-- Left (Logo) -->
       <a class="navbar-brand d-flex align-items-center" href="#">
@@ -21,6 +23,8 @@
         <input class="form-control me-2" type="search" placeholder="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
+
+      <!-- Right (Icons) -->
       <div>
         <i class="bi bi-camera-video fs-4 me-3"></i>
         <i class="bi bi-bell fs-4 me-3"></i>
@@ -28,8 +32,78 @@
       </div>
     </div>
   </nav>
+  <!-- NAVBAR Closing -->
 
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
+  <!-- MAIN LAYOUT Opening -->
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- SIDEBAR Opening -->
+      <div class="col-md-2 col-3 bg-black vh-100 p-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-house-door me-2"></i> H
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-lightning-charge me-2"></i> Shorts
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-collection-play me-2"></i> Subscriptions
+            </a>
+          </li>
+          <hr class="bg-secondary">
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-clock-history me-2"></i> History
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-list-ul me-2"></i> Playlists
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-play-btn me-2"></i> Your videos
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-clock me-2"></i> Watch later
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-hand-thumbs-up me-2"></i> Liked videos
+            </a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-download me-2"></i> Downloads
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- SIDEBAR Closing -->
+
+      <!-- MAIN CONTENT Opening -->
+      <div class="col-md-10 col-9 p-4">
+        <h4>Main Content Area</h4>
+        <!-- Later: JS will inject video cards here -->
+      </div>
+      <!-- MAIN CONTENT Closing -->
+
+    </div>
+  </div>
+  <!-- MAIN LAYOUT Closing -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
